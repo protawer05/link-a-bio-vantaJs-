@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link a bio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            VANTA.BIRDS({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color2: 0x707f0,
+                colorMode: "lerp",
+                birdSize: 1.10,
+                separation: 13.00,
+                alignment: 3.00,
+                cohesion: 6.00,
+                backgroundAlpha: 0.00
+            })
+            setTimeout(() => {
+                const main = document.querySelector('main');
+                main.style.opacity = 1;
+                main.style.filter = 'blur(0px)'
+            }, 500)
+            
+        })
+    </script>
+</head>
+<body>
+    <div id="vanta"></div>
+    <main>
+        <header>
+            <img src="./images/avatar.png" alt="logo">
+            <h1>@Gasperf</h1>
+        </header>
+        <ul>
+            <li>
+                <a href="https://protawer05.github.io">
+                    <img src="./images/homepage.svg" alt="homepage" width="20px">
+                    Official Website
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UC26kP_CE5_iS2i08v5d1b3g">
+                    <img src="./images/youtube.svg" alt="youtube" width="20px">
+                    Youtube
+                </a>
+            </li>
+            <li>
+                <a href="https://vk.com/antons05">
+                    <img src="./images/vk.svg" alt="vk" width="20px">
+                    Vk
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/protawer05">
+                    <img src="./images/github.svg" alt="gith" width="20px">
+                    Github
+                </a>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
